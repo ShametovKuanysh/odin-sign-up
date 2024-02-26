@@ -103,17 +103,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    align-items: flex-end;
     padding: 1rem 0 0;
 }
 
 .input-field {
     width: 45%;
+    margin-bottom: 1rem;
 }
 
 .input-field input {
     width: 100%;
-    margin-bottom: 1rem;
     border: 1px solid var(--light-color);
     padding: .5rem;
     border-radius: .3rem;
@@ -122,6 +121,10 @@ body {
 .input-field input:focus {
     border: .5px solid blue;
     box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.input-field input:invalid {
+    border: 1px solid red;
 }
 
 .input-field label {
@@ -146,4 +149,10 @@ body {
 .side-footer a {
     color: var(--green-color);
     cursor: pointer;
+}
+
+.error {
+    height: 1rem;
+    color: red;
+    font-size: 0.7rem !important;
 }
